@@ -1,44 +1,204 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 
-		<title>reveal.js</title>
+    <title>Thera Chang｜履歷簡報</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section data-visibility="hidden">Slide X</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				showHiddenSlides: true,
+    <style>
+        .muted { opacity: 0.75; }
+        .small { font-size: 0.72em; }
+        .tight li { margin: 0.25em 0; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+        .tag { display:inline-block; padding: 2px 10px; border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; margin: 6px 8px 0 0; font-size: 0.7em; }
+        .kpi { font-size: 0.95em; }
+        .kpi b { font-size: 1.08em; }
+    </style>
+</head>
 
-				slideNumber: 'c/t',
+<body>
+<div class="reveal">
+    <div class="slides">
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <!-- 1. Title -->
+        <section>
+            <h2>Thera Chang</h2>
+            <p class="muted">軟體工程師｜前端 / 全端</p>
+            <p class="small">
+                +886-976-544-500 ｜ r10944053@csie.ntu.edu.tw<br/>
+                linkedin.com/in/thera-c-b5b2a3218
+            </p>
+            <p class="small muted">（本簡報依履歷內容整理）</p>
+        </section>
+
+        <!-- 2. Summary -->
+        <section>
+            <h3>簡介</h3>
+            <ul class="tight">
+                <li>現職：PERFECT Corp. 工程師（2024/03–至今）</li>
+                <li>主力：React 前端、系統型產品開發、SDK/第三方整合、可用性/流程優化</li>
+                <li>經驗涵蓋：React Native、Next.js、Nest.js、SQL、AWS 服務</li>
+            </ul>
+            <div style="margin-top: 14px;">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">SQL</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+            </div>
+        </section>
+
+        <!-- 3. Experience - PERFECT -->
+        <section>
+            <h3>工作經歷｜PERFECT Corp.（2024/03–至今）</h3>
+            <div class="two-col">
+                <div>
+                    <h4>Perfect Console System</h4>
+                    <ul class="tight">
+                        <li>使用 React 開發商務管理系統（品類含：美妝、眼鏡、耳環、手錶等）</li>
+                        <li>負責設計後端介面（API）與前端串接：商品建立 / 編輯流程</li>
+                        <li>整合 SDK，支援使用者即時預覽效果</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Web Consultation Module</h4>
+                    <ul class="tight">
+                        <li>將 SDK 整合進 Shopify：加入拖拉與縮放操作，提升試戴互動性</li>
+                        <li>整合至官網 demo store（保養 / 髮長等功能），製作 RWD 友善頁面</li>
+                        <li>以 React 重建內部測試平台並導入 Material UI</li>
+                        <li>流程優化：由手動輸入 URL 改為按鈕觸發 API 測試，降低操作成本</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experience - MVP Fastlane -->
+        <section>
+            <h3>實習經歷｜MVP Fastlane 全端工程師實習（2021/08–2022/05）</h3>
+            <ul class="tight">
+                <li>參與 Scrum 開發流程</li>
+                <li>以 React Native + AWS 開發點餐行動 App</li>
+                <li>開發 2 個 RWD Web App：Nest.js、Next.js + SQL 資料庫</li>
+                <li>整合第三方 API：Google API、Surveycake API、Ezpay API</li>
+            </ul>
+        </section>
+
+        <!-- 5. Experience - Artise Biomedical -->
+        <section>
+            <h3>實習經歷｜Artise Biomedical 軟體工程師實習（2021/02–2021/07）</h3>
+            <ul class="tight">
+                <li>參與腦認知功能健康檢測軟體開發（含嬰幼兒 ASD 預測相關）</li>
+                <li>以 Python 開發腦波資料處理功能：EEG 繪製、訊號分析、神經回饋</li>
+                <li>根據腦波模式提供行為辨識與回饋流程</li>
+            </ul>
+        </section>
+
+        <!-- 6. MSc Thesis -->
+        <section>
+            <h3>研究 / 專案｜碩士論文（2023/06）</h3>
+            <p><b>以 Transformer 生成類別圖：從需求文字到 Class Diagram</b></p>
+            <p class="small muted">Advisor: Prof. Jonathan Lee｜Software Engineering Lab</p>
+            <ul class="tight">
+                <li>提出自動化系統：使用預訓練 Transformer（GPT-NeoX-20B）</li>
+                <li>將需求改寫為 EARS（Easy Approach to Requirements Syntax）格式</li>
+                <li>並自動生成類別圖（Class Diagram）</li>
+                <li class="kpi">實驗結果：生成準確度優於 GPT-3 與 BARD（分別提升 <b>78%</b>、<b>86%</b>）</li>
+            </ul>
+        </section>
+
+        <!-- 7. Undergraduate project -->
+        <section>
+            <h3>研究 / 專案｜大學專題（2021/06）</h3>
+            <p><b>機器學習 × 音樂欣賞分類系統（BCI）</b></p>
+            <p class="small muted">Advisor: Prof. Chang-Shing Lee｜Ontology Applications & Software Engineering Lab</p>
+            <ul class="tight">
+                <li>整合機器學習與腦機介面（BCI）推論腦波資料</li>
+                <li>判斷情緒狀態：快樂 / 無聊 / 沉思</li>
+                <li class="kpi">最佳結果：MSE <b>0.006</b></li>
+            </ul>
+        </section>
+
+        <!-- 8. Achievements -->
+        <section>
+            <h3>競賽與成就</h3>
+            <ul class="tight">
+                <li>台南大學程式競賽（C++）｜第 3 名（2019/12）<span class="muted">（3 / 462）</span></li>
+                <li>台南大學程式競賽（C++）｜第 5 名（2018/12）<span class="muted">（5 / 447）</span></li>
+            </ul>
+        </section>
+
+        <!-- 9. Skills -->
+        <section>
+            <h3>技能</h3>
+            <div class="two-col">
+                <div>
+                    <h4>語言</h4>
+                    <ul class="tight">
+                        <li>Java / Python / C++</li>
+                        <li>JavaScript / HTML / CSS</li>
+                        <li>SQL（MySQL）</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>框架 / 工具</h4>
+                    <ul class="tight">
+                        <li>React / Node.js / Next.js / Flask</li>
+                        <li>Git / Docker / AWS Services</li>
+                        <li>VS Code / Visual Studio / IntelliJ / Eclipse</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Education -->
+        <section>
+            <h3>學歷</h3>
+            <ul class="tight">
+                <li>台灣大學｜網路與多媒體研究所 碩士（2021/09–2023/06）</li>
+                <li>台南大學｜資工系 學士（2017/09–2021/06）</li>
+            </ul>
+        </section>
+
+        <!-- 11. Closing -->
+        <section>
+            <h3>聯絡方式</h3>
+            <p class="small">
+                Thera Chang<br/>
+                r10944053@csie.ntu.edu.tw<br/>
+                +886-976-544-500<br/>
+                linkedin.com/in/thera-c-b5b2a3218
+            </p>
+            <p class="muted small">謝謝</p>
+        </section>
+
+        <!-- Optional hidden slide -->
+        <section data-visibility="hidden">
+            <h3>備用頁</h3>
+            <p class="small muted">放補充圖、demo 連結、或 Q&A。</p>
+        </section>
+
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        showHiddenSlides: true,
+        slideNumber: 'c/t',
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+</script>
+</body>
 </html>
